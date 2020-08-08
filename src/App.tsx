@@ -74,9 +74,9 @@ function App() {
   return (
     <div>
       <HeaderDiv>
-        <HeaderTitleDiv>{textMap.title}</HeaderTitleDiv>
+        <HeaderTitleDiv id="title">{textMap.title}</HeaderTitleDiv>
       </HeaderDiv>
-      <TopicsDiv>
+      <TopicsDiv id="topics">
         {textMap.topics.map((topic, idx) => {
           return (
             <TopicContents key={idx}>
